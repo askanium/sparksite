@@ -1,0 +1,272 @@
+.description-block, .events-topic-description {
+    font-family: 'NeutraDisplay-Medium', Helvetica, Verdana, sans-serif;
+    /*margin: 0;*/
+    line-height: normal;
+}
+
+.description-block {
+    padding: 90px 0;
+    margin: 0 auto;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+#about {
+    /*background-color: #231f20;*/
+    color: #ffffff;
+    background: url(../images/logo-gray-extract.png) no-repeat right, #231f20;
+}
+
+#about p {
+    visibility: hidden;
+}
+
+#events {
+    background-color: #ffffff;
+    color: #231f20;
+}
+
+#solutions {
+    /*background-color: #09304d;*/
+    background-color: rgb(73, 68, 82);
+    /*background-color: rgb(84, 109, 115);*/
+    color: #ffffff;
+}
+
+.events-header, .contacts-header {
+    background-color: #ffffff;
+    color: #231f20;
+}
+
+.solutions-header {
+    background-color: rgb(73, 68, 82);
+    /*background-color: #09304d;*/
+    color: #ffffff;
+}
+
+#solutionsContent {
+    width: 100%;
+}
+
+.blog-page-header {
+	padding: 24px 0;
+	min-height: 10px;
+}
+
+.block-header {
+    font-family:'NeutraDisplay-Titling', Helvetica, Verdana, sans-serif;
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+.events-topic-first, .events-topic-second {
+    width: 48%;
+}
+
+#bizpower, #prism {
+    text-align: center;
+}
+
+#prism img {
+    width: 300px;
+    margin-bottom: 24px;
+}
+
+#bizpower img {
+    width: 150px;
+    margin-bottom: 12px;
+}
+
+.events-topic-first { margin-right: 2%; float: left; }
+.events-topic-second { margin-left: 2%; float: right; }
+
+.events-topic-header {
+    font-family: "NeutraDisplay-Titling", Helvetica, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1.3em;
+    margin: 24px 0 18px;
+}
+
+.contact-details {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.block-delimiter {
+    position: absolute;
+    margin-top: -29px;
+    width: 100%;
+    text-align: center;
+}
+
+.delimiter-hexagon {
+    width: 50px;
+    height: 58px;
+    background-image: url("../images/animation/animation6.png");
+    margin: 0 auto;
+}
+.nav-logo {
+    position: absolute;
+    left: 50%;
+    height: 50px;
+    width: auto;
+}
+
+.apply-now, .download-button {
+    clear: both;
+    display: block;
+    margin: 24px auto;
+    padding: 10px;
+    width: 260px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #db5940;
+}
+.apply-now:hover, .download-button:hover {
+    background-color: #231f20;
+}
+
+.download-button {
+    float: right;
+}
+
+@media all and (min-width: 1600px) {
+    .description-block {
+        font-size: 1.8em;
+    }
+    .container {
+        width: 1400px;
+    }
+    #bizpower img {
+        width: 200px;
+        margin-bottom: 12px;
+    }
+    .events-topic-description {
+        font-size: 1.60em;
+    }
+    .horiz-menu {
+        font-size: 1.4em;
+    }
+    .nav-logo {
+        margin-top: 7px;
+    }
+}
+
+@media all and (min-width: 1280px) and (max-width: 1599px) {
+    .description-block {
+        font-size: 1.6em;
+    }
+    .container {
+        width: 1000px;
+    }
+    #bizpower img {
+        width: 150px;
+    }
+    .events-topic-description {
+        font-size: 1.40em;
+    }
+    .horiz-menu {
+        font-size: 1em;
+    }
+    .nav-logo {
+        margin-top: 4px;
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1279px) {
+    .description-block {
+        font-size: 1.4em;
+    }
+    .container {
+        width: 860px;
+    }
+    .events-topic-description {
+        font-size: 1.2em;
+    }
+    .nav-logo {
+        margin-top: 4px;
+    }
+}
+
+/*– HTCOne, Sony Xperia, HTC Droid DNA, Samsung Galaxy S4, Sony Xperia Z */
+@media only screen and (-webkit-min-device-pixel-ratio: 3) and (min-device-width:719) and (device-aspect-ratio: 9/16){ 
+    .description-block {
+        font-size: 3em;
+    }
+    .container {
+        width: 960px;
+    }
+    .events-topic-description {
+        font-size: 1.2em;
+    }
+    .nav-logo {
+        margin-top: 4px;
+    }
+}
+
+@media all and (min-width: 800px) and (max-width: 1023px) {
+    .description-block {
+        font-size: 1.4em;
+        padding: 65px 0;
+    }
+    .block-header {
+        font-size: 0.8em;
+        margin-bottom: 50px;
+    }
+    .container {
+        width: 720px;
+    }
+    .events-topic-header {
+        font-size: 1em;
+    }
+    .events-topic-description {
+        font-size: 1.2em;
+    }
+    .nav-logo {
+        margin-top: 4px;
+    }
+    .contact-details {
+        font-size: 1.2em;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 799px) {
+    .description-block {
+        font-size: 1.4em;
+        padding: 65px 0;
+    }
+    .block-header {
+        font-size: 0.8em;
+        margin-bottom: 50px;
+    }
+    .container {
+        width: 470px;
+    }
+    .events-topic-header {
+        font-size: 1em;
+    }
+    .events-topic-description {
+        font-size: 1.2em;
+    }
+    .horiz-menu {
+        font-size: 0.8em;
+    }
+    .nav-item {
+        padding: 15px 10px;
+    }
+    .nav-logo {
+        margin-top: 2px;
+        height: 40px;
+    }
+    .contact-details {
+        font-size: 1.2em;
+    }
+    .events-topic-first, .events-topic-second {
+        width: 100%;
+        margin: 0;
+    }
+}
