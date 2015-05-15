@@ -1,0 +1,197 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-15 10:50+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: templates/index.html:41
+msgid "About us"
+msgstr "О нас"
+
+#: templates/index.html:41
+msgid "Solutions"
+msgstr "Решения"
+
+#: templates/index.html:41
+msgid "Contacts"
+msgstr "Контакты"
+
+#: templates/index.html:41
+msgid "Our clients"
+msgstr "Наши клиенты"
+
+#: templates/index.html:41
+msgid "Events"
+msgstr "События"
+
+#: templates/index.html:41
+msgid "Our partners"
+msgstr "Наши партнеры"
+
+#: templates/index.html:41
+msgid "Blog"
+msgstr "Блог"
+
+#: templates/index.html:90
+msgid ""
+" Spark Research Labs is a regional research and consulting firm that "
+"develops solutions for clients from private, public and non-for-profit "
+"sectors. "
+msgstr ""
+"Spark Research Labs—это региональная исследовательская и консалтинговая компания, которая разрабатывает бизнес решения для клиентов из частного, государственного и негосударственного секторов."
+
+#: templates/index.html:93
+msgid ""
+" We are applying in-depth knowledge, looking for deep understanding of the "
+"root causes and deliver inclusive solutions for each client. Our team has "
+"circa 5 years of experience in various fields: "
+msgstr ""
+"Мы используем фундаментальные знания для углублённого анализа коренных причин и разрабатываем комплексные решения для каждого клиента. Наша команда обладает пятилетним опытом работы в таких областях как:"
+
+#: templates/index.html:96
+msgid "Strategy Development"
+msgstr "Разработка Стратегий"
+
+#: templates/index.html:97
+msgid "Process and Project Management"
+msgstr "Управление Проектами и Процессами"
+
+#: templates/index.html:98
+msgid "Quality Management"
+msgstr "Управление Качеством"
+
+#: templates/index.html:99
+msgid "Production and Supply Chain Management"
+msgstr "Управление Производством и Логистикой"
+
+#: templates/index.html:100
+msgid "Knowledge Management"
+msgstr "Управление Знаниями"
+
+#: templates/index.html:101
+msgid "IT and Data Mining"
+msgstr "IT и Анализ Больших Массивов Данных"
+
+#: templates/index.html:104
+msgid ""
+" We integrate our consulting insights, IT tools and hands-on support into "
+"the client’s system at all levels thus ensuring concrete results and "
+"clients’ long-term, continuous improvement. We develop ourselves together "
+"with our clients and build lasting relationships with them. "
+msgstr ""
+"Мы внедряем наши консалтинговые решения, IT-инструменты и методические материалы на разных системных уровнях наших клиентов, таким образом мы обеспечиваем достижение конкретных результатов и непрерывное развитие. Мы развиваемся вместе с нашими клиентами и строим с ними долгосрочные отношения."
+
+#: templates/index.html:107
+msgid ""
+" We connect with our partners in social and business projects contributing "
+"to the sustainable development of the society. "
+msgstr ""
+"Мы сотрудничаем с нашими партнёрами в социальных и бизнес проектах, способствуя устойчивому развитию общества."
+
+#: templates/index.html:115
+msgid "We support"
+msgstr "Мы поддерживаем"
+
+#: templates/index.html:121
+msgid ""
+" On 16th of May, TEDxChisinau is organizing a new event with the suggestive "
+"theme TEDxChisinau: Crossroads. "
+msgstr ""
+"16-го мая TEDxChisinau организует новое событие с наводящей на размышления темой TEDxChisinau: Crossroads."
+
+#: templates/index.html:124
+msgid ""
+" Things change rapidly nowadays, with a lot of options to choose from in all "
+"areas. Thus, quite frequently we find ourselves pondering on what option to "
+"choose and what path to follow in order to get the best possible result. "
+"This is true on the personal level as well as on the society level, where as "
+"a nation people have to make decisions that will bring them peace and "
+"prosperity. "
+msgstr ""
+"В настоящее время все меняется очень быстро, и в любой области нам доступно множество вариантов выбора. Поэтому довольно часто мы размышляем о том, какой же вариант выбрать и каким путем следовать для того, чтобы получить наилучший результат. Это происходит как на личном уровне, так и на уровне общества, где люди, как единая нация, должны принимать решения, которые приведут их к миру и процветанию."
+
+#: templates/index.html:127
+msgid ""
+" At TEDxChisinau: Crossroads you’ll find different views of local and "
+"international speakers on what choices are to be made in order to solve the "
+"world’s current problems or at least deal with them more efficiently. How to "
+"take better decisions when faced with a choice? What to do when being on a "
+"crossroad? "
+msgstr ""
+"На TEDxChisinau: Crossroads вы услышите различные мнения местных и международных спикеров о том, какой выбор должен быть сделан для того, чтобы более эффективно решать текущие проблемы в мире или, по крайней мере, справляться с ними. Как принять лучшее решение, когда сталкиваешься с выбором? Что делать, когда оказываешься на перекрестке?"
+
+#: templates/index.html:130
+msgid " Stay tuned. Let’s cross on the 16th of May! "
+msgstr ""
+"Следите за обновлениями. Давайте пересечемся 16 мая!"
+
+#: templates/index.html:133
+msgid "We were here"
+msgstr "Мы были здесь"
+
+#: templates/index.html:139
+msgid ""
+" Bizpower—the biggest business event in the Republic of Moldova was held on "
+"the May 2–3, 2014. More than 50 speakers talked about actual for local "
+"businesses themes, addressed to the 700 delegates. How to gain life-long "
+"customers, what does the internationalization of business imply, from "
+"coaching to KPI indicators—the aim of Bizpower conference in 2014 was "
+"sharing valuable knowledge through discussion of relevant topics. "
+msgstr ""
+"Bizpower—самое большое бизнес событие Республики Молдова было проведено 2–3 мая 2014г. Более 50 докладчиков говорили о самых актуальных для местного бизнеса темах, обращаясь к 700 делегатам данной конференции. Как завоевать клиентов на всю жизнь, что предполагает интернационализация бизнеса, от коучинга до показателей KPI—целью конференции Bizpower 2014 был обмен ценными знаниями посредством обсуждения актуальных тематик. "
+
+#: templates/index.html:157
+msgid ""
+" Prism is a cloud-based solution designed to assist in the management of "
+"warehouse stocks throughout the supply chain. "
+msgstr ""
+"Prism представляет собой «облачное» решение, разработанное для помощи менеджменту в управлении складскими запасами на протяжении всей цепи поставок. "
+
+#: templates/index.html:160
+msgid ""
+" Prism algorithms are developed for the big data analysis. The algorithm "
+"improves itself independently based on trends in the supply chain and "
+"provides accurate information needed to regulate the process of delivery and "
+"procurement.Prism provides management with the information of the quantity "
+"of goods to be delivered to a specific point of sales, as well as with the "
+"information about the storage positions (Stock Keeping Unit–SKU), that must "
+"be ordered from the central warehouse. "
+msgstr ""
+"Алгоритмы Prism разработаны для анализа больших данных. Алгоритм самостоятельно улучшает себя на основе тенденций цепи поставок и предоставляет точную информацию, необходимую для регулирования процесса доставки и закупок. Призм помогает менеджменту, обеспечивая его информацией о количестве товаров, которое необходимо доставить в конкретную точку реализации, а также снабжая информацией о складских позициях (Stock Keeping Unit–SKU), которые необходимо заказать в центральном складе. "
+
+#: templates/index.html:163
+msgid ""
+" Prism is a solution that is ideally suited to different business models. It "
+"is suitable both for the local supply network, and for the network with "
+"international suppliers. The solution provides accurate information for "
+"product portfolios with different characteristics—from perishable goods to "
+"products with a long life cycle. "
+msgstr ""
+"Prism представляет собой решение, которое идеально подходит различным моделям бизнеса. Оно подходит как для сети поставок локального размера, так и для сети с международными поставщиками. Решение предоставляет точную информацию для портфелей продуктов с различными характеристиками, от скоропортящихся товаров до товаров с длительным жизненным циклом. "
+
+#: templates/index.html:166
+msgid ""
+" Connection of Prism to the client system is made through the individual "
+"implementation program developed to meet customer needs. The implementation "
+"program includes training of employees, configuration and setup of the "
+"program, processes’ improvement and development of the necessary "
+"documentation. "
+msgstr ""
+"Подключение Prism к системе клиента производится через индивидуальную программу внедрения, разработанную с учётом потребностей клиента. Программа внедрения предполагает обучение сотрудников, конфигурацию и настройку программы, улучшение процессов и разработку необходимой документации. "
+
+#: templates/index.html:234
+msgid "All Rights Reserved."
+msgstr "Все права защищены."

@@ -1,0 +1,197 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-15 10:50+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: templates/index.html:41
+msgid "About us"
+msgstr "Despre noi"
+
+#: templates/index.html:41
+msgid "Solutions"
+msgstr "Soluții"
+
+#: templates/index.html:41
+msgid "Contacts"
+msgstr "Contacte"
+
+#: templates/index.html:41
+msgid "Our clients"
+msgstr "Clienții noștri"
+
+#: templates/index.html:41
+msgid "Events"
+msgstr "Evenimente"
+
+#: templates/index.html:41
+msgid "Our partners"
+msgstr "Partenerii noștri"
+
+#: templates/index.html:41
+msgid "Blog"
+msgstr "Blog"
+
+#: templates/index.html:90
+msgid ""
+" Spark Research Labs is a regional research and consulting firm that "
+"develops solutions for clients from private, public and non-for-profit "
+"sectors. "
+msgstr ""
+" Spark Research Labs, este o companie regională, de cercetare și consultanță care dezvoltă soluții pentru clienți din sectoarele privat, public și non-guvernamental."
+
+#: templates/index.html:93
+msgid ""
+" We are applying in-depth knowledge, looking for deep understanding of the "
+"root causes and deliver inclusive solutions for each client. Our team has "
+"circa 5 years of experience in various fields: "
+msgstr ""
+"Aplicăm cunoștințe profunde și perseverăm pentru a înțelege cauzele primare și pentru a livra soluții comprehensive pentru fiecare client. Echipa noastră are o experiența de circa 5 ani în domenii precum:"
+
+#: templates/index.html:96
+msgid "Strategy Development"
+msgstr "Dezvoltarea Strategiei"
+
+#: templates/index.html:97
+msgid "Process and Project Management"
+msgstr "Managementul Proceselor și al Proiectelor"
+
+#: templates/index.html:98
+msgid "Quality Management"
+msgstr "Managementul Calității"
+
+#: templates/index.html:99
+msgid "Production and Supply Chain Management"
+msgstr "Managementul Producerii și al Lanțului de Aprovizionare"
+
+#: templates/index.html:100
+msgid "Knowledge Management"
+msgstr "Managementul Cunoștințelor"
+
+#: templates/index.html:101
+msgid "IT and Data Mining"
+msgstr "IT și Analiza Datelor Mari (Data Mining)"
+
+#: templates/index.html:104
+msgid ""
+" We integrate our consulting insights, IT tools and hands-on support into "
+"the client’s system at all levels thus ensuring concrete results and "
+"clients’ long-term, continuous improvement. We develop ourselves together "
+"with our clients and build lasting relationships with them. "
+msgstr ""
+"Integrăm soluțiile noastre de consultanță și produsele IT în sistemul clientului, ghidându-l la toate nivelurile, astfel asigurând obținerea rezultatelor concrete și dezvoltarea continuă al acestuia. Ne dezvoltăm și stabilim relații durabile împreună cu clienții noștri."
+
+#: templates/index.html:107
+msgid ""
+" We connect with our partners in social and business projects contributing "
+"to the sustainable development of the society. "
+msgstr ""
+"Colaborăm cu partenerii noștri în proiecte sociale și de business, astfel, contribuind la dezvoltarea sustenabilă a societății."
+
+#: templates/index.html:115
+msgid "We support"
+msgstr "Noi susținem"
+
+#: templates/index.html:121
+msgid ""
+" On 16th of May, TEDxChisinau is organizing a new event with the suggestive "
+"theme TEDxChisinau: Crossroads. "
+msgstr ""
+"Pe 16 mai, TEDxChisinau organizează un nou eveniment cu genericul TEDxChisinau: Crossroads."
+
+#: templates/index.html:124
+msgid ""
+" Things change rapidly nowadays, with a lot of options to choose from in all "
+"areas. Thus, quite frequently we find ourselves pondering on what option to "
+"choose and what path to follow in order to get the best possible result. "
+"This is true on the personal level as well as on the society level, where as "
+"a nation people have to make decisions that will bring them peace and "
+"prosperity. "
+msgstr ""
+"Realitatea prezentului se schimbă cu o viteză uluitoare. Trăim într-o societate care oferă o gamă tot mai largă de alegeri şi, de multe ori, ne pomenim prinşi ponderând între ce opţiuni să alegem şi ce drum să urmăm aşa ca să obţinem cel mai bun rezultat posibil. E un adevăr valabil atât la nivel personal, cât şi în cazul întregii ţări, unde în calitate de societate trebuie să luăm decizii care să ne garanteze pacea şi prosperitatea."
+
+#: templates/index.html:127
+msgid ""
+" At TEDxChisinau: Crossroads you’ll find different views of local and "
+"international speakers on what choices are to be made in order to solve the "
+"world’s current problems or at least deal with them more efficiently. How to "
+"take better decisions when faced with a choice? What to do when being on a "
+"crossroad? "
+msgstr ""
+"Iată de ce, la TEDxChisinau: Crossroads speakerii îşi vor împărtăşi cunoştinţele şi experienţele despre alegerile pe care trebuie să le facem ca să rezolvăm probleme actuale sau, cel puţin, să le facem faţă într-un mod cât mai eficient."
+
+#: templates/index.html:130
+msgid " Stay tuned. Let’s cross on the 16th of May! "
+msgstr ""
+"Stai cu ochii pe TEDxChisinau. Ne vedem pe 16 mai!"
+
+#: templates/index.html:133
+msgid "We were here"
+msgstr "Am fost aici"
+
+#: templates/index.html:139
+msgid ""
+" Bizpower—the biggest business event in the Republic of Moldova was held on "
+"the May 2–3, 2014. More than 50 speakers talked about actual for local "
+"businesses themes, addressed to the 700 delegates. How to gain life-long "
+"customers, what does the internationalization of business imply, from "
+"coaching to KPI indicators—the aim of Bizpower conference in 2014 was "
+"sharing valuable knowledge through discussion of relevant topics. "
+msgstr ""
+"Bizpower—cel mai mare eveniment de business din Republica Moldova a fost organizat în cea de a doua ediție în perioada 2–3 mai 2014. Peste 50 de speakeri au vorbit despre cele mai stringente tematici din mediul de afaceri local, adresându-se celor 700 de participanți prezenți la eveniment. Cum să câștigi clienți pe viață, ce presupune internaționalizarea afacerii, de la coaching la indicatori KPI—esența conferinței Bizpower 2014 a rămas împărtășirea cunoștințelor valoroase la eveniment prin abordarea unor subiecte actuale."
+
+#: templates/index.html:157
+msgid ""
+" Prism is a cloud-based solution designed to assist in the management of "
+"warehouse stocks throughout the supply chain. "
+msgstr ""
+"Prism este o soluție 'cloud-based' care ajută managementul unei companii în luarea deciziilor legate de gestionarea stocurilor în întregul lanț de distribuție. "
+
+#: templates/index.html:160
+msgid ""
+" Prism algorithms are developed for the big data analysis. The algorithm "
+"improves itself independently based on trends in the supply chain and "
+"provides accurate information needed to regulate the process of delivery and "
+"procurement.Prism provides management with the information of the quantity "
+"of goods to be delivered to a specific point of sales, as well as with the "
+"information about the storage positions (Stock Keeping Unit–SKU), that must "
+"be ordered from the central warehouse. "
+msgstr ""
+"Algoritmul Prism este bazat pe analiza de date mari (big data). Este un algoritm care se auto-îmbunătățește studiind tendințele lanțului de aprovizionare și oferă informații exacte și precise pentru echilibrarea procesului de achiziție și distribuție. Prism ajută managementul cu informații referitoare la cantitățile de produse care trebuie să fie livrate la un anumit punct de vânzare și cu informații cu privire la unitățile de stoc (Stock Keeping Unit–SKU), care ar trebui să fie comandate la depozitul central. "
+
+#: templates/index.html:163
+msgid ""
+" Prism is a solution that is ideally suited to different business models. It "
+"is suitable both for the local supply network, and for the network with "
+"international suppliers. The solution provides accurate information for "
+"product portfolios with different characteristics—from perishable goods to "
+"products with a long life cycle. "
+msgstr ""
+"Prism este o soluție care se potrivește perfect cerințelor diverselor modele de business. Este utilă atât pentru o rețea de distribuție cu un furnizor local cât și pentru o rețea cu furnizori internaționali. Soluția software oferă informații exacte pentru diverse structuri de portofolii de produse, care pot fi compuse din bunuri de consum curent și ușor perisabile, dar și din produse cu ciclul de viață prelungit. "
+
+#: templates/index.html:166
+msgid ""
+" Connection of Prism to the client system is made through the individual "
+"implementation program developed to meet customer needs. The implementation "
+"program includes training of employees, configuration and setup of the "
+"program, processes’ improvement and development of the necessary "
+"documentation. "
+msgstr ""
+"Implementarea Prism în sistemul clientului se face prin intermediul unui program ajustat realităților fiecărui client și combină în sine traininguri aplicate, configurare de software, îmbunătățirea proceselor și dezvoltarea documentației necesare. "
+
+#: templates/index.html:234
+msgid "All Rights Reserved."
+msgstr "Toate drepturile rezervate."
