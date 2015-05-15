@@ -1,403 +1,292 @@
-<!DOCTYPE html>
+<!doctype html>
 {% load i18n %}
 {% load staticfiles %}
-<html>
-    <head>
-        <meta http-equiv="content-type" content="text/html;charset=utf-8">
-        <meta property="og:image" content="public/images/spark-facebook-logo.png" />
-        <meta property="og:title" content="A community of professionals who are developing inclusive consulting and software solutions." />
-        <meta property="og:url" content="http://sparklabs.md/" />
-        <meta property="fb:app_id" content="240672139470299" />
-        <meta property="og:site_name" content="Spark Research Labs" />
-        <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
-		<link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
-        <link rel="stylesheet" type="text/css" href="{% static 'stylesheets/Spark_Site.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'stylesheets/animate.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'stylesheets/style.css' %}">
-        <script src='{% static 'javascript/jquery.min.js' %}' type='text/javascript'></script>
-        <script src='{% static 'javascript/FunctionalTools.js' %}' type='text/javascript'></script>
-        <script type="text/javascript">
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-          ga('create', 'UA-50374470-1', 'sparklabs.md');
-          ga('send', 'pageview');
-        </script>
-        <script type="text/javascript">
-            function getWindowSize() {
-              var myWidth = 0, myHeight = 0;
-              if( typeof( window.innerWidth ) == 'number' ) {
-                //Non-IE
-                myWidth = window.innerWidth;
-                myHeight = window.innerHeight;
-              } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
-                //IE 6+ in 'standards compliant mode'
-                myWidth = document.documentElement.clientWidth;
-                myHeight = document.documentElement.clientHeight;
-              } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
-                //IE 4 compatible
-                myWidth = document.body.clientWidth;
-                myHeight = document.body.clientHeight;
-              }
-              return {height: myHeight, width: myWidth};
-            }
+<html class="no-js" lang="">
 
-            function resizeSparkLogo() {
-                var windowSize = getWindowSize();
-                var sparkLogo = $('#SparkLogo');
-                sparkLogo.css('width',(windowSize.height/3)*100/windowSize.width+'%');
-                sparkLogo.css('margin-left',(windowSize.width-windowSize.height/3)/2*100/windowSize.width+'%');
-                $('#logo').height(windowSize.height - headerHeight);
-                heightToUncover = windowSize.height * 0.20;
-            }
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Spark Research Labs</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            function validateEmail(email) {
-                var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-                return re.test(email);
-            }
-            var heightToUncover, headerHeight;
-            $(function() {
-                $('.events-topic-second header').css('padding', ($('.events-topic-first header').height() - $('.events-topic-second header').height()) / 2 + 'px 0');
-                headerHeight = $('#nav').height();
-                resizeSparkLogo();
-                $('#SparkLogo').fadeIn(1000);
+    <meta property="og:image" content="public/images/spark-facebook-logo.png" />
+    <meta property="og:title" content="A community of professionals who are developing inclusive consulting and software solutions." />
+    <meta property="og:url" content="http://sparklabs.md/" />
+    <meta property="fb:app_id" content="240672139470299" />
+    <meta property="og:site_name" content="Spark Research Labs" />
 
-                $(window).resize(function() {
-                    $('.events-topic-second header').css('padding', ($('.events-topic-first header').height() - $('.events-topic-second header').height()) / 2 + 'px 0');
-                    resizeSparkLogo();
-                    headerHeight = $('#nav').height();
-                });
-                var $root = $('html, body');
-                $('.nav-item').click(function() {
-                    var href = $.attr(this, 'href');
-                    var onePixel = href == '#about' ? 0 : 1;
-                    $root.animate({
-                        scrollTop: $(href).offset().top - $('#nav').height() + onePixel
-                    }, 500);
-                    return false;
-                });
-                $('.download-button').click(function() {
-                    var name = $('#dname').val();
-                    var surname = $('#dsurname').val();
-                    var email = $('#demail').val();
-                    var company = $('#dcompany').val();
-                    var position = $('#dposition').val();
-                    if (name != '' && surname != '' && validateEmail(email) && company != '' && position != '') {
-                    }
-                });
+    <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+
+    <link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png' %}">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" type="text/css" href="{% static 'stylesheets/Spark_Site.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'bower_components/animate.css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'bower_components/normalize.css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheets/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheets/style.css' %}">
+
+    <script src="{% static 'bower_components/modernizr/modernizr.js' %}"></script>
+</head>
+
+<body>
+    <div class="landing">
 
 
-                moveScroller();
-                headerHandler();
-                showAbout();
-                showEvents();
-                showSolutions();
-                showContacts();
+        <!--[if lt IE 8]>
+                <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
 
+        {% trans "About us" as about_us %}
+        {% trans "Solutions" as solutions %}
+        {% trans "Contacts" as contacts %}
+        {% trans "Our clients" as clients %}
+        {% trans "Events" as events %}
+        {% trans "Our partners" as partners %}
+        {% trans "Blog" as blog %}
 
-            });
+        {% get_current_language as LANGUAGE_CODE %}
+        {% get_available_languages as LANGUAGES %}
 
-            function showAbout() {
-                var show = function() {
-                    var headerElement = $('.about-header');
-                    var pElements = $('#about p');
-                    var liElements = $('#about li');
-                    liElements.each(function(i) {
-                        var delay = (i*3) / 10;
-                        $(this).css('-webkit-animation-delay', delay+'s');
-                        $(this).css('-moz-animation-delay', delay+'s');
-                        $(this).css('animation-delay', delay+'s');
-                        setElementFadingEffect($(this), 'fadeInLeft', false, getDistanceToBottomOfScreen($('.is-white-bulleted')));
-                    });
-                    pElements.each(function(i) {
-                        setElementFadingEffect($(this), 'fadeInRight'/*, false, getDistanceToBottomOfScreen(headerElement)*/);
-                    });
-                    setElementFadingEffect(headerElement, 'fadeInDown');
-                };
-                $(window).scroll(show);
-                show();
-
-            }
-
-            function setElementFadingEffect(element, effect, blockName, presetDistance) {
-                var distanceToBottomOfTheScreen = presetDistance == undefined ? getDistanceToBottomOfScreen(element) : presetDistance;
-                if (distanceToBottomOfTheScreen > heightToUncover && element.css('visibility') == 'hidden') {
-                    element.css('visibility', 'visible');
-                    element.addClass('animated '+effect);
-                }
-            }
-
-            function getDistanceToBottomOfScreen(element) {
-                var st = $(window).scrollTop();
-                var wh = getWindowSize()['height'];
-                return st + wh - element.offset().top;
-            }
-
-            function showEvents() {
-                var show = function() {
-                    var headerElement = $('.events-header');
-                    var bizpower = $('#bizpower');
-                    var aboutBizpower = $('.about-bizpower');
-                    setElementFadingEffect(headerElement, 'fadeInUp', 'events');
-                    setElementFadingEffect(bizpower, 'fadeInDown', 'events');
-                    setElementFadingEffect(aboutBizpower, 'fadeInDown', 'events');
-                };
-                $(window).scroll(show);
-                show();
-
-            }
-
-            function showSolutions() {
-                var show = function() {
-                    var st = $(window).scrollTop();
-                    var wh = getWindowSize()['height'];
-                    var headerElement = $('.solutions-header');
-                    var prism = $('#prism');
-                    var pElements = $('#solutions p');
-                    pElements.each(function(i) {
-                        setElementFadingEffect($(this), 'fadeInRight'/*, false, getDistanceToBottomOfScreen(headerElement)*/);
-                    });
-                    setElementFadingEffect(prism, 'fadeInUp', 'solutions');
-                    setElementFadingEffect(headerElement, 'fadeInLeft', 'solutions');
-                    if (st + wh - headerElement.offset().top > heightToUncover && headerElement.css("visibility") == 'hidden') {
-                        headerElement.css('margin-right', '-70px');
-                        headerElement.css('opacity', 0);
-                        headerElement.css('visibility', 'visible');
-                        headerElement.animate({
-                            opacity: 1,
-                            'margin-right': 0
-                        }, 1200);
-                    }
-                };
-                $(window).scroll(show);
-                show();
-
-            }
-
-            function showContacts() {
-                var show = function() {
-                    var st = $(window).scrollTop();
-                    var wh = getWindowSize()['height'];
-                    var headerElement = $('.contacts-header');
-                    if (st + wh - headerElement.offset().top > heightToUncover && headerElement.css("visibility") == 'hidden') {
-                        headerElement.css('margin-left', '-70px');
-                        headerElement.css('opacity', 0);
-                        headerElement.css('visibility', 'visible');
-                        headerElement.animate({
-                            opacity: 1,
-                            'margin-left': 0
-                        }, 1200);
-                    }
-                    var contactDetails = $('.contact-details');
-                    contactDetails.each(function(i) {
-                        setElementFadingEffect($(this), 'fadeInUp'/*, false, getDistanceToBottomOfScreen(headerElement)*/);
-                    });
-                };
-                $(window).scroll(show);
-                show();
-
-            }
-
-            function headerHandler() {
-                var move = function() {
-                    var about = $('#about').offset().top - headerHeight - 1;
-                    var events = $('#events').offset().top - headerHeight - 1;
-                    var solutions = $('#solutions').offset().top - headerHeight;
-                    var contacts = $('#contacts').offset().top - headerHeight;
-                    var st = $(window).scrollTop();
-                    if (st < about) {
-                        $('.nav-item').removeClass('is-active-nav-item');
-                    } else if (st < events) {
-                        $('.nav-item').removeClass('is-active-nav-item');
-                        $('a[href=#about]').addClass('is-active-nav-item');
-                    } else if (st < solutions) {
-                        $('.nav-item').removeClass('is-active-nav-item');
-                        $('a[href=#events]').addClass('is-active-nav-item');
-                    } else if (st < contacts) {
-                        $('.nav-item').removeClass('is-active-nav-item');
-                        $('a[href=#solutions]').addClass('is-active-nav-item');
-                    } else {
-                        $('.nav-item').removeClass('is-active-nav-item');
-                        $('a[href=#contacts]').addClass('is-active-nav-item');
-                    }
-                };
-                $(window).scroll(move);
-                move();
-            }
-
-            function moveScroller() {
-                var move = function() {
-                    var sa = $("#scroller-anchor");
-                    var st = $(window).scrollTop();
-                    var ot = sa.offset().top;
-                    var s = $("#nav");
-                    if(st > ot) {
-                        s.css({
-                            position: "fixed",
-                            top: "0px"
-                        });
-                        sa.css({height: headerHeight+'px'});
-                    } else {
-                        if(st <= ot) {
-                            s.css({
-                                position: "relative",
-                                top: ""
-                            });
-                        }
-                        sa.css({height: '0'});
-                    }
-                };
-                $(window).scroll(move);
-                move();
-            }
-
-        </script>
-        <title>Spark Research Lab</title>
-
-    </head>
-
-    {% trans "About us" as about_us %}
-    {% trans "Solutions" as solutions %}
-    {% trans "Contacts" as contacts %}
-
-
-    {% get_current_language as LANGUAGE_CODE %}
-    {% get_available_languages as LANGUAGES %}
-
-    <body>
-    <div id="logo">
+        <div id="logo">
             <img id="SparkLogo" src='{% static 'images/spark-logo-centered1.png' %}' alt='logo' />
         </div>
-        <div id="scroller-anchor"></div>
-        <header id="nav">
-            <div class="container" style="text-align: center">
-                <ul class="horiz-menu nav-left">
-                    <li><a class="nav-item" href="#events">{% trans "Events" %}</a></li>
-                    <li><a class="nav-item" href="#about">{% trans about_us %}</a></li>
-                </ul>
-                <ul class="horiz-menu nav-right">
-                    <li><a class="nav-item" href="#solutions">{% trans solutions %}</a></li>
-                    <li><a class="nav-item" href="#contacts">{% trans contacts %}</a></li>
-                </ul>
-                <img src="{% static 'images/spark-symbol-white.png' %}" height="50" class="nav-logo">
+
+        <!--            The anchor that decides at which point to start/stop fixing the nav header on top -->
+        <div id="scrollerAnchor"></div>
+
+        <!--            The navigation header -->
+        <header id="nav" class="bg-primary">
+            <div class="container text-center">
+                <div class="inline-block">
+                    <ul class="horiz-menu">
+                        <li style="font-size:1.25em;"><img src="{% static 'images/spark-symbol-white.png' %}" height="50" class="nav-logo">
+                        </li>
+                        <li><a class="nav-item" href="#about">{% trans about_us %}</a>
+                        </li>
+                        <li><a class="nav-item" href="#events">{% trans events %}</a>
+                        </li>
+                        <li><a class="nav-item" href="#solutions">{% trans solutions %}</a>
+                        </li>
+                        <li><a class="nav-item" href="#partners">{% trans partners %}</a>
+                        </li>
+                        <!--                            <li><a class="nav-item" href="#blog">{% trans blog %}</a></li>-->
+                        <li><a class="nav-item" href="#contacts">{% trans contacts %}</a>
+                        </li>
+                    </ul>
+                    <!--                        <img src="{% static 'images/spark-symbol-white.png' %}" height="50" class="nav-logo">-->
+                </div>
             </div>
             <div class="language-chooser">
                 <ul class="languages">
-                    <li><a class="language-item{% ifnotequal LANGUAGE_CODE 'ru' %}{% ifnotequal LANGUAGE_CODE 'ro' %} current-language{% endifnotequal %}{% endifnotequal %}" href="/en/">en</a></li>
-                    <li><a class="language-item{% ifequal LANGUAGE_CODE 'ru' %} current-language{% endifequal %}" href="/ru/">ru</a></li>
-                    <li><a class="language-item{% ifequal LANGUAGE_CODE 'ro' %} current-language{% endifequal %}" href="/ro/">ro</a></li>
+                    <li><a class="language-item{% ifnotequal LANGUAGE_CODE 'ru' %}{% ifnotequal LANGUAGE_CODE 'ro' %} current-language{% endifnotequal %}{% endifnotequal %}" href="/en/">en</a>
+                    </li>
+                    <li><a class="language-item{% ifequal LANGUAGE_CODE 'ru' %} current-language{% endifequal %}" href="/ru/">ru</a>
+                    </li>
+                    <li><a class="language-item{% ifequal LANGUAGE_CODE 'ro' %} current-language{% endifequal %}" href="/ro/">ro</a>
+                    </li>
                 </ul>
             </div>
             <div class="clear"></div>
         </header>
+
+        <!--            About Us block -->
         <section id="about" class="description-block">
             <div class="container">
                 <header class="about-header block-header is-hidden-visibility">{% trans about_us %}</header>
                 <p>
-                    {% blocktrans %}
-                        Spark Research Labs is a group of professionals who develop solutions using in-depth knowledge of the following areas:
-                    {% endblocktrans %}
+                    {% blocktrans %} Spark Research Labs is a regional research and consulting firm that develops solutions for clients from private, public and non-for-profit sectors. {% endblocktrans %}
+                </p>
+                <p>
+                    {% blocktrans %} We are applying in-depth knowledge, looking for deep understanding of the root causes and deliver inclusive solutions for each client. Our team has circa 5 years of experience in various fields: {% endblocktrans %}
                 </p>
                 <ul class="is-white-bulleted is-hidden-visibility">
-                <li>{% trans "Strategy Development" %}</li>
-                <li>{% trans "Process and Project Management" %}</li>
-                <li>{% trans "Knowledge Management" %}</li>
-                <li>{% trans "IT and Data Mining" %}</li>
+                    <li>{% trans "Strategy Development" %}</li>
+                    <li>{% trans "Process and Project Management" %}</li>
+                    <li>{% trans "Quality Management" %}</li>
+                    <li>{% trans "Production and Supply Chain Management" %}</li>
+                    <li>{% trans "Knowledge Management" %}</li>
+                    <li>{% trans "IT and Data Mining" %}</li>
                 </ul>
                 <p>
-                    {% blocktrans %}
-                        In our research projects we are always looking for deeper understanding of the root causes that lead to problems in business, we use advanced techniques and a team of specialists from various fields in order to provide the greatest added value for our customers and society.
-                    {% endblocktrans %}
+                    {% blocktrans %} We integrate our consulting insights, IT tools and hands-on support into the client’s system at all levels thus ensuring concrete results and clients’ long-term, continuous improvement. We develop ourselves together with our clients and build lasting relationships with them. {% endblocktrans %}
                 </p>
                 <p>
-                    {% blocktrans %}
-                        During the interaction with our customers, we identify the real problems that they face, develop consulting products and IT solutions that help to solve customer’s problems and become the basis of its strategic development.
-                    {% endblocktrans %}
-                </p>
-                <p>
-                    {% blocktrans %}
-                        All our products are integrated into the client’s system, they improve it and contribute to long-term development.
-                    {% endblocktrans %}
+                    {% blocktrans %} We connect with our partners in social and business projects contributing to the sustainable development of the society. {% endblocktrans %}
                 </p>
             </div>
         </section>
+
+        <!--            Events block -->
         <section id="events" class="description-block">
             <div class="container">
-                <header class="events-header block-header is-hidden-visibility">{% trans 'We were here' %}</header>
+                <header class="events-header block-header is-hidden-visibility">{% trans "We support" %}</header>
+                <div id="tedxchisinau" class="is-hidden-visibility">
+                    <a href="http://www.tedxchisinau.com"><img src='{% static 'images/events/tedxchisinau.png' %}' alt='TEDxChisinau' />
+                    </a>
+                </div>
+                <p class='about-tedxchisinau is-hidden-visibility'>
+                    {% blocktrans %} On 16th of May, TEDxChisinau is organizing a new event with the suggestive theme TEDxChisinau: Crossroads. {% endblocktrans %}
+                </p>
+                <p class="about-tedxchisinau is-hidden-visibility">
+                    {% blocktrans %} Things change rapidly nowadays, with a lot of options to choose from in all areas. Thus, quite frequently we find ourselves pondering on what option to choose and what path to follow in order to get the best possible result. This is true on the personal level as well as on the society level, where as a nation people have to make decisions that will bring them peace and prosperity. {% endblocktrans %}
+                </p>
+                <p class="about-tedxchisinau is-hidden-visibility">
+                    {% blocktrans %} At TEDxChisinau: Crossroads you’ll find different views of local and international speakers on what choices are to be made in order to solve the world’s current problems or at least deal with them more efficiently. How to take better decisions when faced with a choice? What to do when being on a crossroad? {% endblocktrans %}
+                </p>
+                <p class="about-tedxchisinau is-hidden-visibility">
+                    {% blocktrans %} Stay tuned. Let’s cross on the 16th of May! {% endblocktrans %}
+                </p>
+
+                <header class="events-header small-block-header is-hidden-visibility">{% trans "We were here" %}</header>
                 <div id="bizpower" class="is-hidden-visibility">
                     <img src='{% static 'images/bizpower-400x400.jpg' %}' alt='bizpower' />
                 </div>
                 <p class='about-bizpower is-hidden-visibility'>
-                    {% blocktrans %}
-                        Bizpower—the biggest business event in the Republic of Moldova returns with the second edition on May 2–3.
-                        More than 50 speakers will talk about actual for local businesses themes, addressing to the 700 delegates that
-                        are expected to be at the conference. How to gain life-long customers, what does the internationalization of
-                        business imply, from coaching to KPI indicators—the aim of Bizpower conference in 2014 remains sharing
-                        valuable knowledge through discussion of relevant topics.
-                    {% endblocktrans %}
+
+                    {% blocktrans %} Bizpower—the biggest business event in the Republic of Moldova was held on the May 2–3, 2014. More than 50 speakers talked about actual for local businesses themes, addressed to the 700 delegates. How to gain life-long customers, what does the internationalization of business imply, from coaching to KPI indicators—the aim of Bizpower conference in 2014 was sharing valuable knowledge through discussion of relevant topics. {% endblocktrans %}
+
                 </p>
 
-                <div class="clear"></div>
+                <!--                    <div class="clear"></div>-->
             </div>
         </section>
+
+        <!--            Solutions block -->
         <section id="solutions" class="description-block">
             <div class="container">
                 <header class="solutions-header block-header is-hidden-visibility">{% trans solutions %}</header>
+                <!--                    <div class="col-md-4">-->
+
                 <div id="prism" class="is-hidden-visibility">
                     <img src='{% static 'images/prism-logo.png' %}' alt='prism' />
                 </div>
                 <p>
-                    {% blocktrans %}
-                        Prism is a cloud-based solution designed to assist in the management of warehouse stocks throughout the supply chain.
-                    {% endblocktrans %}
+                    {% blocktrans %} Prism is a cloud-based solution designed to assist in the management of warehouse stocks throughout the supply chain. {% endblocktrans %}
                 </p>
                 <p>
-                    {% blocktrans %}
-                        Prism algorithms are developed for the big data analysis. The algorithm improves itself independently based on trends in the supply chain and provides accurate information needed to regulate the process of delivery and procurement.Prism provides management with the information of the quantity of goods to be delivered to a specific point of sales, as well as with the information about the storage positions (Stock Keeping Unit–SKU), that must be ordered from the central warehouse.
-                    {% endblocktrans %}
+                    {% blocktrans %} Prism algorithms are developed for the big data analysis. The algorithm improves itself independently based on trends in the supply chain and provides accurate information needed to regulate the process of delivery and procurement.Prism provides management with the information of the quantity of goods to be delivered to a specific point of sales, as well as with the information about the storage positions (Stock Keeping Unit–SKU), that must be ordered from the central warehouse. {% endblocktrans %}
                 </p>
                 <p>
-                    {% blocktrans %}
-                        Prism is a solution that is ideally suited to different business models. It is suitable both for the local supply network, and for the network with international suppliers. The solution provides accurate information for product portfolios with different characteristics—from perishable goods to products with a long life cycle.
-                    {% endblocktrans %}
+                    {% blocktrans %} Prism is a solution that is ideally suited to different business models. It is suitable both for the local supply network, and for the network with international suppliers. The solution provides accurate information for product portfolios with different characteristics—from perishable goods to products with a long life cycle. {% endblocktrans %}
                 </p>
                 <p>
-                    {% blocktrans %}
-                        Connection of Prism to the client system is made through the individual implementation program developed to meet customer needs. The implementation program includes training of employees, configuration and setup of the program, processes’ improvement and development of the necessary documentation.
-                    {% endblocktrans %}
+                    {% blocktrans %} Connection of Prism to the client system is made through the individual implementation program developed to meet customer needs. The implementation program includes training of employees, configuration and setup of the program, processes’ improvement and development of the necessary documentation. {% endblocktrans %}
                 </p>
+                <!--                    </div>-->
+
             </div>
         </section>
+        <section id="partners" class="description-block">
+            <div class="container">
+                <header class="partners-header block-header is-hidden-visibility">{% trans partners %}</header>
+
+<!--
+                <div class="row">
+                    <div class="col-xs-12 col-md-4 text-center magenta">
+                        <a href="http://www.consulting.md">
+                            <img src="{% static 'images/partners/magenta_logo.png' %}" alt="Magenta Consulting">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-4 text-center tekedu">
+                        <a href="http://tekedu.org.md/">
+                            <img src="{% static 'images/partners/tekedu_logo.png' %}" alt="TEKEDU">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-4 text-center mega">
+                        <a href="http://megageneration.com/">
+                            <img src="{% static 'images/partners/mega_logo.png' %}" alt="MEGA Generation">
+                        </a>
+                    </div>
+                </div>
+-->
+           <table class="partners">
+               <tbody>
+                   <tr>
+                       <td class="col-xs-4 text-center">
+                           <a href="http://www.consulting.md">
+                               <img src="{% static 'images/partners/magenta_logo.png' %}" alt="Magenta Consulting">
+                           </a>
+                       </td>
+                       <td class="col-xs-4 text-center">
+                           <a href="http://tekedu.org.md/">
+                               <img src="{% static 'images/partners/tekedu_logo.png' %}" alt="TEKEDU">
+                           </a>
+                       </td>
+                       <td class="col-xs-4 text-center">
+                           <a href="http://megageneration.com/">
+                               <img src="{% static 'images/partners/mega_logo.png' %}" alt="MEGA Generation">
+                           </a>
+                       </td>
+                   </tr>
+               </tbody>
+           </table>
+            </div>
+        </section>
+
+        <div class="delimiter"></div>
+
         <section id="contacts" class="description-block">
             <div class="container">
                 <header class="contacts-header block-header is-hidden-visibility">{% trans contacts %}</header>
                 <div class="contact-details is-hidden-visibility">email@sparklabs.md</div>
                 <div class="contact-details is-hidden-visibility">
-                    <a href="http://www.linkedin.com/company/spark-research-labs" style="margin-right: 48px;" target="_blank"><img src="{% static 'images/linkedin-150x38.png' %}"></a>
-                    <a href="https://www.facebook.com/sparklabs" target="_blank"><img src="{% static 'images/facebook-141x29.png' %}"></a>
+                    <a href="http://www.linkedin.com/company/spark-research-labs" style="margin-right: 48px;" target="_blank"><img src="{% static 'images/linkedin-150x38.png' %}">
+                    </a>
+                    <a href="https://www.facebook.com/sparklabs" target="_blank"><img src="{% static 'images/facebook-141x29.png' %}">
+                    </a>
                 </div>
             </div>
         </section>
-            
-        <footer>© 2014 Spark Research Labs. {% trans 'All Rights Reserved.'%}</footer>
 
-        <!-- Start of StatCounter Code for Default Guide -->
-        <script type="text/javascript">
-        var sc_project=9765592;
-        var sc_invisible=1;
-        var sc_security="f1f30ac0";
+        <footer>© 2014 Spark Research Labs. {% trans 'All Rights Reserved.'%}</footer>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"><\/script>')
+    </script>
+<!--    <script src="{% static 'js/main.js' %}"></script>-->
+    <script src="{% static 'javascript/landingpage.js' %}"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function (b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = '//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-50374470-1', 'sparklabs.md');
+        ga('send', 'pageview');
+    </script>
+    <!-- Start of StatCounter Code for Default Guide -->
+    <script type="text/javascript">
+        var sc_project = 9765592;
+        var sc_invisible = 1;
+        var sc_security = "f1f30ac0";
         var scJsHost = (("https:" == document.location.protocol) ?
-        "https://secure." : "http://www.");
-        document.write("<sc"+"ript type='text/javascript' src='" +
-        scJsHost+
-        "statcounter.com/counter/counter.js'></"+"script>");
-        </script>
-        <noscript><div class="statcounter"><a title="free hit
-        counters" href="http://statcounter.com/"
-        target="_blank"><img class="statcounter"
-        src="http://c.statcounter.com/9765592/0/f1f30ac0/1/"
-        alt="free hit counters"></a></div></noscript>
-        <!-- End of StatCounter Code for Default Guide -->
-    </body>
+            "https://secure." : "http://www.");
+        document.write("<sc" + "ript type='text/javascript' src='" +
+            scJsHost +
+            "statcounter.com/counter/counter.js'></" + "script>");
+    </script>
+    <noscript>
+        <div class="statcounter">
+            <a title="free hit
+        counters" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/9765592/0/f1f30ac0/1/" alt="free hit counters">
+            </a>
+        </div>
+    </noscript>
+    <!-- End of StatCounter Code for Default Guide -->
+</body>
+
 </html>

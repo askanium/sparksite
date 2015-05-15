@@ -6,7 +6,7 @@ urlpatterns = patterns('',
    (r'^i18n/', include('django.conf.urls.i18n')),
 )
 
-urlpatterns += patterns('',
+urlpatterns += i18n_patterns('',
     # Examples:
     url(r'^$', 'landing_page.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
