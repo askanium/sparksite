@@ -4,6 +4,8 @@ from django.contrib import admin
 
 urlpatterns = patterns('',
    (r'^i18n/', include('django.conf.urls.i18n')),
+   url(r'^blog/$', 'landing_page.views.blog', name='blog'),
+
 )
 
 urlpatterns += i18n_patterns('',

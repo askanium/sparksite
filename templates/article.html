@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+    <div class="container-fluid">
+
+        <!-- Logo row -->
+        <div class="row">
+
+            <div class="col-xs-0 col-lg-1"></div>
+
+            <div class="col-xs-12 col-md-2 col-lg-2">
+                <img src="{% static 'images/spark_horizontal_logo.png' %}" alt="Spark Research Labs" height="200"/>
+            </div>
+            <div class="col-xs-0 col-lg-9">
+{#                <img src="{% static 'images/spark_horizontal_logo.png' %}" alt="Spark Research Labs" height="170"/>#}
+            </div>
+        </div>
+
+        <!-- Title row -->
+        <div class="row">
+            <div class="col-xs-0 col-lg-1"></div>
+
+            <div class="col-xs-12 col-md-2 col-lg-2"></div>
+
+            <div class="col-xs-12 col-md-9 col-lg-7">
+                <h1>Lorem ipsum dolor sit amet</h1>
+            </div>
+
+            <div class="col-xs-0 col-md-1 col-lg-2"></div>
+        </div>
+
+        <!-- Article row -->
+        <div class="row">
+
+            <div class="col-xs-0 col-lg-1"></div>
+
+            <div class="col-xs-12 col-md-2 col-lg-2">
+                <div class="sidebar">
+
+                    <!-- Publishing date -->
+                    <p class="">
+                        23.05.2015
+                    </p>
+
+                    <!-- Author photo and name -->
+                    <table class="author">
+                        <tbody>
+                        <tr>
+                            <td>
+                                <img src="{% static 'images/media/pavel-thumbnail-bw-smaller.png' %}" alt="Pavel Moraru" />
+                            </td>
+                            <td class="author-name">
+                                Pavel Moraru
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Author short bio  -->
+                    <p>
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec a nisl ac erat blandit vulputate at eu leo.
+                    </p>
+
+                    <div class="tags">
+                        <span class="label label-primary">lorem</span>
+                        <span class="label label-primary">ipsum</span>
+                        <span class="label label-primary">dolor</span>
+                        <span class="label label-primary">sit</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-md-9 col-lg-7">
+                <div class="article">
+
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices sapien at sodales rutrum. Aenean convallis risus sit amet malesuada ultricies. Suspendisse finibus eu felis in fringilla. Donec sit amet tempor ligula. In hac habitasse platea dictumst. Donec eleifend odio non libero tempus, id condimentum sapien fringilla. In sed egestas velit. Phasellus scelerisque, lorem ac condimentum tincidunt, urna ante vulputate justo, at porttitor nisl dolor et nisl. Sed elit nibh, vestibulum eget tincidunt id, porta et magna. Etiam iaculis placerat malesuada. Proin elit ante, vestibulum vestibulum tortor id, porttitor feugiat nisi. Sed dignissim nisi lectus, porta interdum mauris porta ac. Fusce non tellus ac ipsum feugiat laoreet id sit amet magna. Curabitur at neque purus.
+                    </p>
+
+                    <p>
+                        Morbi at ante quam. Nulla id varius felis. Nulla pharetra leo consequat leo interdum consequat. Nulla imperdiet id felis eget lobortis. Quisque eget semper nulla, at scelerisque nulla. Mauris non metus in est efficitur efficitur nec non augue. Donec viverra sapien ut urna aliquet, ac blandit ipsum pulvinar. Praesent sed eleifend tellus. Vivamus pretium sem vel ante pellentesque, ut sollicitudin ligula sagittis. Sed dignissim purus at auctor placerat. Nam nec tempus dui. Mauris vulputate enim a dolor finibus, sit amet euismod velit iaculis. Integer non lorem sem. Sed consectetur ligula nisl, quis finibus magna rhoncus consectetur. Quisque nec malesuada lorem, sodales tempus risus. Duis ornare sit amet nulla in lobortis.
+                    </p>
+
+                    <h2>Morbi at ante quam</h2>
+
+                    <p>
+                        Ut eu aliquam dolor. Nulla aliquam dignissim ligula id convallis. Curabitur eget sodales neque. Quisque interdum ornare augue, sagittis pellentesque mi. In placerat enim vestibulum neque blandit tincidunt. Donec cursus tortor ut consectetur facilisis. Duis venenatis tellus sit amet est vehicula, in aliquam urna scelerisque. Maecenas a metus feugiat, tempus lacus sit amet, varius libero. Aenean malesuada accumsan mauris vel elementum. Vivamus eros ligula, hendrerit id varius sit amet, facilisis vitae metus. Aenean cursus ante vestibulum lobortis porta. Proin odio lectus, mollis quis diam non, sodales tristique elit. Praesent porttitor varius malesuada. Sed convallis vitae nisl id eleifend. Nunc egestas eget nisl ac vestibulum.
+                    </p>
+
+                    <h3>Mauris maximus neque in volutpat sodales</h3>
+
+                    <p>
+                        Mauris maximus neque in volutpat sodales. Ut eget laoreet sem. Quisque ultrices id enim ut laoreet. Nullam dui dui, laoreet in quam ac, dapibus luctus diam. Pellentesque sodales sed augue id euismod. Aliquam suscipit leo lectus, eget suscipit lacus tempus ut. Praesent nunc diam, posuere vitae pellentesque et, laoreet at ante. Aenean mattis vestibulum sem ut ornare. Pellentesque vitae dui sit amet nisi pellentesque laoreet. Morbi ultrices magna at ligula sodales sodales. In congue metus a faucibus condimentum. Sed pharetra est augue, eget dignissim metus facilisis id. Sed efficitur in metus accumsan ultricies. Nunc ultrices mi at ligula sollicitudin, in posuere ex dapibus.
+                    </p>
+
+                    <h3>In hac habitasse platea dictumst</h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Vivamus fermentum diam at lorem vehicula eleifend. Aenean ut massa nec ligula dignissim pellentesque. Donec vel molestie neque, vel rhoncus lorem. Pellentesque in magna sit amet urna facilisis rutrum. Etiam porttitor felis enim, id dignissim enim laoreet vel. Suspendisse suscipit efficitur fermentum. Nam diam turpis, fringilla a leo quis, lacinia dapibus nisi. Integer sollicitudin facilisis lacus sed tincidunt. Curabitur at vulputate nisi, eu sagittis est. Quisque ac tincidunt dolor. In sed ipsum diam.
+                    </p>
+
+                </div>
+
+                <div class="sharing-buttons">
+
+                </div>
+
+            </div>
+
+            <div class="col-xs-0 col-md-1 col-lg-2"></div>
+        </div>
+
+    </div>
+
+    <footer>© 2014 Spark Research Labs. All Rights Reserved.</footer>
+
+{% endblock content %}

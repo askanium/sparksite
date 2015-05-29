@@ -682,3 +682,46 @@ table.partners {
 .is-hidden-display {
     display: none;
 }
+
+
+/* ------------------------ */
+/* --- blog page styles --- */
+/* ------------------------ */
+
+
+.article, table.author td {
+    font-family:"ProximaNova-Regular", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.article {
+    font-size: 1.5em;
+}
+
+table.author {
+    margin-bottom: 1em;
+}
+table.author::after {
+    clear: both;
+}
+
+table.author td.author-name {
+    font-size: 1.2em;
+    line-height: 1.3em;
+    font-family: "ProximaNova-Bold", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: left;
+}
+table.author td.author-name, table.author td.author-label {
+    padding-left: 1em;
+}
+table.author td.author-label {
+    font-size: 1.2em;
+}
+
+div.sidebar {
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    padding: 1em 0;
+}
+
+.tags {
+    margin-top: 1.5em;
+}
