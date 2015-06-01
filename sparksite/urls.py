@@ -5,6 +5,7 @@ from django.contrib import admin
 urlpatterns = patterns('',
    (r'^i18n/', include('django.conf.urls.i18n')),
    url(r'^blog/$', 'landing_page.views.blog', name='blog'),
+   url(r'^blog/articles$', 'landing_page.views.articles', name='articles'),
 
 )
 

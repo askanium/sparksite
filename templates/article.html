@@ -18,18 +18,18 @@
             </div>
         </div>
 
-        <!-- Title row -->
-        <div class="row">
-            <div class="col-xs-0 col-lg-1"></div>
-
-            <div class="col-xs-12 col-md-2 col-lg-2"></div>
-
-            <div class="col-xs-12 col-md-9 col-lg-7">
-                <h1>Lorem ipsum dolor sit amet</h1>
-            </div>
-
-            <div class="col-xs-0 col-md-1 col-lg-2"></div>
-        </div>
+{#        <!-- Title row -->#}
+{#        <div class="row">#}
+{#            <div class="col-xs-0 col-lg-1"></div>#}
+{##}
+{#            <div class="col-xs-12 col-md-2 col-lg-2"></div>#}
+{##}
+{#            <div class="col-xs-12 col-md-9 col-lg-7">#}
+{#                <h1>Lorem ipsum dolor sit amet</h1>#}
+{#            </div>#}
+{##}
+{#            <div class="col-xs-0 col-md-1 col-lg-2"></div>#}
+{#        </div>#}
 
         <!-- Article row -->
         <div class="row">
@@ -37,22 +37,24 @@
             <div class="col-xs-0 col-lg-1"></div>
 
             <div class="col-xs-12 col-md-2 col-lg-2">
+                <h1 style="visibility: hidden;">.</h1>
                 <div class="sidebar">
 
                     <!-- Publishing date -->
-                    <p class="">
-                        23.05.2015
-                    </p>
+{#                    <p class="">#}
+{#                        May 23, 2015#}
+{#                    </p>#}
 
                     <!-- Author photo and name -->
                     <table class="author">
                         <tbody>
                         <tr>
                             <td>
-                                <img src="{% static 'images/media/pavel-thumbnail-bw-smaller.png' %}" alt="Pavel Moraru" />
+                                <img src="{% static 'images/media/pavel-thumbnail-bw-smaller.png' %}" alt="Pavel Moraru" width="63" />
                             </td>
                             <td class="author-name">
-                                Pavel Moraru
+                                <span>By Pavel Moraru</span>
+                                <span class="publish-date">May 23, 2015</span>
                             </td>
                         </tr>
                         </tbody>
@@ -76,6 +78,7 @@
 
             <div class="col-xs-12 col-md-9 col-lg-7">
                 <div class="article">
+                    <h1>Lorem ipsum dolor sit amet</h1>
 
 
                     <p>
@@ -107,7 +110,27 @@
                 </div>
 
                 <div class="sharing-buttons">
+                    <h5>Let others find out interesting stuff</h5>
+                    <span class='st_facebook_large' displayText='Facebook'></span>
+                    <span class='st_twitter_large' displayText='Tweet'></span>
+                    <span class='st_linkedin_large' displayText='LinkedIn'></span>
+                    <span class='st_googleplus_large' displayText='Google +'></span>
+                </div>
 
+                <div class="comments">
+                    <div id="disqus_thread"></div>
+                    <script type="text/javascript">
+                        /* * * CONFIGURATION VARIABLES * * */
+                        var disqus_shortname = 'sparkresearchlabs';
+
+                        /* * * DON'T EDIT BELOW THIS LINE * * */
+                        (function() {
+                            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
                 </div>
 
             </div>
@@ -117,6 +140,6 @@
 
     </div>
 
-    <footer>© 2014 Spark Research Labs. All Rights Reserved.</footer>
+    <footer>© 2015 Spark Research Labs. All Rights Reserved.</footer>
 
 {% endblock content %}
