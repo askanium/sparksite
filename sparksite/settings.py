@@ -39,6 +39,7 @@ INSTALLED_APPS = (
 
     'landing_page',
     'blog',
+    'ckeditor',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -55,6 +56,10 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'sparksite.urls'
 
 WSGI_APPLICATION = 'sparksite.wsgi.application'
+
+CKEDITOR_UPLOAD_PATH = "uploads/"
+
+CKEDITOR_IMAGE_BACKEND  = 'pillow'
 
 
 # Database
@@ -74,7 +79,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Chisinau'
 
 USE_I18N = True
 

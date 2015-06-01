@@ -6,6 +6,9 @@ urlpatterns = patterns('',
    (r'^i18n/', include('django.conf.urls.i18n')),
    url(r'^blog/$', 'landing_page.views.blog', name='blog'),
    url(r'^blog/articles$', 'landing_page.views.articles', name='articles'),
+   (r'^ckeditor/', include('ckeditor.urls')),
+
+   url(r'^admin/', include(admin.site.urls)),
 
 )
 
@@ -14,5 +17,5 @@ urlpatterns += i18n_patterns('',
     url(r'^$', 'landing_page.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
-    url(r'^admin/', include(admin.site.urls)),
+
 )
