@@ -13,5 +13,5 @@ def articles(request):
 
 def home(request):
     # posts = Article.objects.posts_summary()
-    posts = []
+    posts = None
     return render(request, 'index.html', {'articles_for_summary': posts})
