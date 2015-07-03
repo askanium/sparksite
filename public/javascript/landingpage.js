@@ -8,6 +8,7 @@
         showEvents = showEventsFn,
         showSolutions = showSolutionsFn,
         showPartners = showPartnersFn,
+        showClients = showClientsFn,
         showContacts = showContactsFn,
         navHeaderHighlightBehavior = navHeaderHighlightBehaviorFn;
 
@@ -21,6 +22,7 @@
         showEvents();
         showSolutions();
         showPartners();
+        showClients();
         showContacts();
 
         $('#SparkLogo').fadeIn(1000);
@@ -40,6 +42,7 @@
         $(window).bind("scroll", showEvents);
         $(window).bind("scroll", showSolutions);
         $(window).bind("scroll", showPartners);
+        $(window).bind("scroll", showClients);
         $(window).bind("scroll", showContacts);
         $(window).resize(resizeSparkLogo);
 
@@ -96,6 +99,7 @@
             events = $('#events').offset().top - headerHght,
             solutions = $('#solutions').offset().top - headerHght,
             partners = $('#partners').offset().top - headerHght,
+            clients = $('#clients').offset().top - headerHght,
             contacts = $('#contacts').offset().top - headerHght,
             scrollTop = $(window).scrollTop();
 
@@ -110,9 +114,12 @@
         } else if (scrollTop < partners) {
             $('.nav-item').removeClass('is-active-nav-item');
             $('a[href=#solutions]').addClass('is-active-nav-item');
-        } else if (scrollTop < contacts) {
+        } else if (scrollTop < clients) {
             $('.nav-item').removeClass('is-active-nav-item');
             $('a[href=#partners]').addClass('is-active-nav-item');
+        } else if (scrollTop < contacts) {
+            $('.nav-item').removeClass('is-active-nav-item');
+            $('a[href=#clients]').addClass('is-active-nav-item');
         } else {
             $('.nav-item').removeClass('is-active-nav-item');
             $('a[href=#contacts]').addClass('is-active-nav-item');
@@ -195,6 +202,20 @@
 
         setElementAnimation(blockHeader, 'fadeIn');
         setElementAnimation(partners, 'fadeInUp');
+    }
+
+    /**
+     * Manage the first appearance of the Partners block on
+     * the landing page.
+     */
+    function showClientsFn() {
+        var scrollTop = $(window).scrollTop();
+        var windowHeight = getWindowSize().height;
+        var blockHeader = $('.clients-header');
+        var clients = $('.clients-logos');
+
+        setElementAnimation(blockHeader, 'fadeIn');
+        setElementAnimation(clients, 'fadeInUp');
     }
 
     /**

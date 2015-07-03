@@ -1,6 +1,7 @@
 <!doctype html>
 {% load i18n %}
 {% load staticfiles %}
+{% load blog_tags %}
 <html class="no-js" lang="">
 
 <head>
@@ -71,6 +72,8 @@
                         <li><a class="nav-item" href="#solutions">{% trans solutions %}</a>
                         </li>
                         <li><a class="nav-item" href="#partners">{% trans partners %}</a>
+                        </li>
+                        <li><a class="nav-item" href="#clients">{% trans clients %}</a>
                         </li>
                         <!--                            <li><a class="nav-item" href="#blog">{% trans blog %}</a></li>-->
                         <li><a class="nav-item" href="#contacts">{% trans contacts %}</a>
@@ -227,57 +230,62 @@
         </section>
 
         <div class="delimiter"></div>
-
-        <section id="blog" class="description-block">
+    
+        <section id="clients" class="description-block">
             <div class="container">
-                <header class="blog-header block-header">Blog</header>
-{#                <header class="blog-header block-header is-hidden-visibility">{% trans contacts %}</header>#}
-                <div style="padding-bottom: 24px;">Some brain food here...</div>
-                <div class="row">
-                    <div class="row-same-height">
+                <header class="clients-header block-header is-hidden-visibility">{% trans clients %}</header>
 
-                        <!-- Article nr 1 -->
-                        <div class="panel panel-default col-xs-12 col-md-4 col-xs-height landing-page-article">
-{#                            <div class="panel panel-default">#}
-                                <div class="panel-body">
-                                    <a href="#">
-                                        <h3>Lorem ipsum dolor sit amet</h3>
-                                    </a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices sapien at sodales rutrum. Aenean convallis risus sit amet malesuada ultricies. Suspendisse finibus eu felis in fringilla.</p>
-                                    <a href="#" class="btn btn-link landing-page-continue-reading">Continue reading >></a>
-                                </div>
-{#                            </div>#}
+                <div class="text-center clients-logos is-hidden-visibility">
+                    {% ifequal LANGUAGE_CODE 'ru' %}
+                        <a href="http://ptpa.ru/" target="_blank">
+                            <img src="{% static 'images/clients/ptpa_ru.jpg' %}" alt="ПТПА"/>
+                        </a>
+                    {% endifequal %}
+                    {% ifnotequal LANGUAGE_CODE 'ru' %}
+                        <a href="http://ptpa-valves.com/" target="_blank">
+                            <img src="{% static 'images/clients/ptpa_en.png' %}" alt="PTPA"/>
+                        </a>
+                    {% endifnotequal %}
+
+                </div>
+            </div>
+        </section>
+
+        <div class="delimiter"></div>
+
+        {% if articles_for_summary.count >= 3 %}
+            <section id="blog" class="description-block">
+                <div class="container">
+                    <header class="blog-header block-header">Blog</header>
+    {#                <header class="blog-header block-header is-hidden-visibility">{% trans contacts %}</header>#}
+                    <div style="padding-bottom: 24px;">Some brain food here...</div>
+                    <div class="row">
+                        <div class="row-same-height">
+
+                                {% for article in articles_for_summary %}
+                                    <div class="panel panel-default col-xs-12 col-md-4 col-xs-height landing-page-article">
+            {#                            <div class="panel panel-default">#}
+                                            <div class="panel-body">
+                                                <a href="{% url 'article' article.slug %}">
+                                                    <h3>{{ article.title }}</h3>
+                                                </a>
+                                                {% autoescape off %}
+                                                    <p>{{ article.summary }}</p>
+                                                {% endautoescape %}
+                                                <a href="{% url 'article' article.slug %}" class="btn btn-link landing-page-continue-reading">Continue reading >></a>
+                                            </div>
+            {#                            </div>#}
+                                    </div>
+                                {% endfor %}
+
                         </div>
 
-                        <!-- Article nr 2 -->
-                        <div class="panel panel-default col-xs-12 col-md-4 col-xs-height landing-page-article">
-{#                            <div class="panel">#}
-                                <div class="panel-body">
-                                    <h3>Morbi at ante quam</h3>
-                                    <p>Ut eu aliquam dolor. Nulla aliquam dignissim ligula id convallis. Curabitur eget sodales neque. Quisque interdum ornare augue, sagittis pellentesque mi. In placerat enim vestibulum neque blandit tincidunt. Donec cursus tortor ut consectetur facilisis.</p>
-                                    <a href="#" class="btn btn-link landing-page-continue-reading">Continue reading >></a>
-                                </div>
-{#                            </div>#}
-                        </div>
-
-                        <!-- Article nr 3 -->
-                        <div class="panel panel-default col-xs-12 col-md-4 col-xs-height landing-page-article">
-{#                            <div class="panel">#}
-                                <div class="panel-body">
-                                    <h3>Mauris maximus neque in volutpat sodales</h3>
-                                    <p>Mauris maximus neque in volutpat sodales. Ut eget laoreet sem. Quisque ultrices id enim ut laoreet. Nullam dui dui, laoreet in quam ac, dapibus luctus diam.</p>
-                                    <a href="#" class="btn btn-link landing-page-continue-reading">Continue reading >></a>
-                                </div>
-{#                            </div>#}
-                        </div>
                     </div>
 
 
                 </div>
-
-
-            </div>
-        </section>
+            </section>
+        {% endif %}
 
         <section id="contacts" class="description-block">
             <div class="container">

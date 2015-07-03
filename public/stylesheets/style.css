@@ -379,7 +379,7 @@ table.partners {
     visibility: hidden;
 }
 
-.events-header, .contacts-header, .partners-header {
+.events-header, .contacts-header, .partners-header, .clients-header {
     background-color: #ffffff;
     color: #231f20;
 }
@@ -762,6 +762,50 @@ div.sidebar {
     margin-bottom: 36px;
 }
 
+
+/* -------------------- */
+/* --- blog sidebar --- */
+/* -------------------- */
+
+
+.menu-btn {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    z-index: 9999;
+}
+
+.blog-sidebar {
+    background-color: #231f20;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 48px;
+    z-index: 9998;
+    height: 100%;
+}
+
+.sidebar-container {
+    margin-top: 48px;
+}
+
+.sidebar-container h5 {
+    color: #fff;
+    margin-top: 36px;
+}
+
+.sidebar-article {
+    display: block;
+    color: #FFFFFF;
+}
+
+.label-sidebar {
+    border: 1px solid #FFFFFF;
+}
+a.label-sidebar:hover {
+    background-color: #FFFFFF;
+    color: #231f20;
+}
 
 /* ----------------------------------- */
 /* --- blog on landing_page styles --- */

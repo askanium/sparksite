@@ -27,9 +27,16 @@
 
             <div class="col-xs-12 col-md-9 col-lg-7">
 
+                {% for article in article_list %}
+
+                    {{ article.full_name|upper }}<br />
+
+
                 <div class="article">
 
-                    <h1>Lorem ipsum dolor sit amet</h1>
+                    <h1>
+                        <a href="{% url 'article' article.slug %}">{{ article.title }}</a>
+                    </h1>
 
                     <div class="metadata">
 
@@ -37,112 +44,63 @@
                             <tbody>
                             <tr>
                                 <td style="min-width: 2%;">
-                                    <img src="{% static 'images/media/pavel-thumbnail-bw-smaller.png' %}" alt="Pavel Moraru" width="36" />
+                                    <a href="{% url 'author' article.author.user %}">
+                                    <img src="{{ MEDIA_URL }}{{ article.author.picture }}" alt="{{ article.author.name }}" width="36" />
+                                    </a>
                                 </td>
                                 <td class="article-list-author-name text-left">
-                                    <span>By Pavel Moraru</span>
-                                    <span class="publish-date">May 23, 2015</span>
-                                </td>
-                                <td class="article-list-tags text-right">
                                     <span>
-                                        <span class="label label-primary">lorem</span>
-                                        <span class="label label-primary">ipsum</span>
-                                        <span class="label label-primary">dolor</span>
-                                        <span class="label label-primary">sit</span>
+                                        <a href="{% url 'author' article.author.user %}">{{ article.author.user }}</a>
                                     </span>
+                                    <span class="publish-date">{{ article.published_at|date:"F j, o" }}</span>
                                 </td>
+
+                                <td class="article-list-tags text-right">
+
+                                {% for tag in article.tags.all %}
+
+                                    <span>
+                                        <a href="{% url 'tag' tag.name %}" class="label label-primary"> {{ tag.name }}</a>
+                                    </span>
+
+                                {% endfor %}
+
+                                </td>
+
                             </tr>
                             </tbody>
                         </table>
 
                     </div>
+                        {% autoescape off %}
+                            {{ article.content|truncatechars:400 }}
+                        {% endautoescape %}
 
-
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices sapien at sodales rutrum. Aenean convallis risus sit amet malesuada ultricies. Suspendisse finibus eu felis in fringilla. Donec sit amet tempor ligula. In hac habitasse platea dictumst. Donec eleifend odio non libero tempus, id condimentum sapien fringilla. In sed egestas velit. Phasellus scelerisque, lorem ac condimentum tincidunt, urna ante vulputate justo, at porttitor nisl dolor et nisl. Sed elit nibh, vestibulum eget tincidunt id, porta et magna. Etiam iaculis placerat malesuada. Proin elit ante, vestibulum vestibulum tortor id, porttitor feugiat nisi. Sed dignissim nisi lectus, porta interdum mauris porta ac. Fusce non tellus ac ipsum feugiat laoreet id sit amet magna. Curabitur at neque purus.
-                    </p>
-
-                    <a href="#" class="btn btn-default">Continue Reading >></a>
-
-                </div>
-
-                <div class="article">
-                    <h1>Morbi at ante quam</h1>
-
-                    <div class="metadata">
-
-                        <table class="author" style="width: 100%;">
-                            <tbody>
-                            <tr>
-                                <td style="min-width: 2%;">
-                                    <img src="{% static 'images/media/pavel-thumbnail-bw-smaller.png' %}" alt="Pavel Moraru" width="36" />
-                                </td>
-                                <td class="article-list-author-name text-left">
-                                    <span>By Pavel Moraru</span>
-                                    <span class="publish-date">May 23, 2015</span>
-                                </td>
-                                <td class="article-list-tags text-right">
-                                    <span>
-                                        <span class="label label-primary">lorem</span>
-                                        <span class="label label-primary">ipsum</span>
-                                        <span class="label label-primary">dolor</span>
-                                        <span class="label label-primary">sit</span>
-                                    </span>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-
-                    <p>
-                        Ut eu aliquam dolor. Nulla aliquam dignissim ligula id convallis. Curabitur eget sodales neque. Quisque interdum ornare augue, sagittis pellentesque mi. In placerat enim vestibulum neque blandit tincidunt. Donec cursus tortor ut consectetur facilisis. Duis venenatis tellus sit amet est vehicula, in aliquam urna scelerisque. Maecenas a metus feugiat, tempus lacus sit amet, varius libero. Aenean malesuada accumsan mauris vel elementum. Vivamus eros ligula, hendrerit id varius sit amet, facilisis vitae metus. Aenean cursus ante vestibulum lobortis porta. Proin odio lectus, mollis quis diam non, sodales tristique elit. Praesent porttitor varius malesuada. Sed convallis vitae nisl id eleifend. Nunc egestas eget nisl ac vestibulum. - See more at: http://localhost:8000/blog/#sthash.ROSG4xHK.dpuf
-                    </p>
-
-                    <a href="#" class="btn btn-default">Continue Reading >></a>
+                   <p></p>
+                    <a href="{% url 'article' article.slug %}" class="btn btn-default">Continue Reading >></a>
 
                 </div>
 
-                <div class="article">
-                    <h1>Mauris maximus neque in volutpat sodales</h1>
-                    <div class="metadata">
+                {% endfor %}
 
-                        <table class="author" style="width: 100%;">
-                            <tbody>
-                            <tr>
-                                <td style="min-width: 2%;">
-                                    <img src="{% static 'images/media/pavel-thumbnail-bw-smaller.png' %}" alt="Pavel Moraru" width="36" />
-                                </td>
-                                <td class="article-list-author-name text-left">
-                                    <span>By Pavel Moraru</span>
-                                    <span class="publish-date">May 23, 2015</span>
-                                </td>
-                                <td class="article-list-tags text-right">
-                                    <span>
-                                        <span class="label label-primary">lorem</span>
-                                        <span class="label label-primary">ipsum</span>
-                                        <span class="label label-primary">dolor</span>
-                                        <span class="label label-primary">sit</span>
-                                    </span>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-
-
-                    <p>
-                        Mauris maximus neque in volutpat sodales. Ut eget laoreet sem. Quisque ultrices id enim ut laoreet. Nullam dui dui, laoreet in quam ac, dapibus luctus diam. Pellentesque sodales sed augue id euismod. Aliquam suscipit leo lectus, eget suscipit lacus tempus ut. Praesent nunc diam, posuere vitae pellentesque et, laoreet at ante. Aenean mattis vestibulum sem ut ornare. Pellentesque vitae dui sit amet nisi pellentesque laoreet. Morbi ultrices magna at ligula sodales sodales. In congue metus a faucibus condimentum. Sed pharetra est augue, eget dignissim metus facilisis id. Sed efficitur in metus accumsan ultricies. Nunc ultrices mi at ligula sollicitudin, in posuere ex dapibus. - See more at: http://localhost:8000/blog/#sthash.ROSG4xHK.NM18gJt4.dpuf
-                    </p>
-
-                    <a href="#" class="btn btn-default">Continue Reading >></a>
-
-                </div>
 
                 <div class="page-navigation">
-                    <a href="#" class="btn btn-link">&larr; Older</a>
-                    <a href="#" class="btn btn-link disabled pull-right">Newer &rarr;</a>
+                    <span class="step-links">
+
+                        {% if article_list.has_next %}
+
+                            <a href="?page={{ article_list.next_page_number }}" class="btn btn-link">&larr; Older</a>
+                        {% endif %}
+
+{#                        <span class="current">#}
+{#                            Page {{ article_list.number }} of {{ article_list.paginator.num_pages }}#}
+{#                        </span>#}
+
+                        {% if article_list.has_previous %}
+                            <a href="?page={{ article_list.previous_page_number }}" class="btn btn-link pull-right">Newer &rarr;</a>
+                        {% endif %}
+
+                    </span>
                 </div>
 
             </div>
