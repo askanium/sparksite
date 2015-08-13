@@ -444,7 +444,7 @@ table.partners {
 }
 
 #bizpower img {
-    width: 150px;
+    width: 120px;
 }
 
 #girlsgoit img {
@@ -510,11 +510,11 @@ table.partners {
         font-size: 1.4em;
         line-height: 1.3em;
     }
-    .container {
-        width: 1400px;
-    }
+    /*.container {*/
+        /*width: 1400px;*/
+    /*}*/
     #bizpower img {
-        width: 200px;
+        width: 150px;
         margin-bottom: 12px;
     }
     .events-topic-header {
@@ -539,7 +539,7 @@ table.partners {
         width: 1000px;
     }
     #bizpower img {
-        width: 150px;
+        width: 120px;
     }
     .horiz-menu {
         font-size: 1em;

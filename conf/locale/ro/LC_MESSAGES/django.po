@@ -177,7 +177,7 @@ msgstr ""
 
 #: templates/index.html:178
 msgid "Delivered two workshops"
-msgstr "Am livrat două \"workshop\"-uri"
+msgstr "Am livrat două workshopuri"
 
 #: templates/index.html:185
 msgid ""
