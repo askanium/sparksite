@@ -72,8 +72,8 @@
                         </li>
                         <li><a class="nav-item" href="#partners">{% trans partners %}</a>
                         </li>
-                        <li><a class="nav-item" href="#clients">{% trans clients %}</a>
-                        </li>
+{#                        <li><a class="nav-item" href="#clients">{% trans clients %}</a>#}
+{#                        </li>#}
                         <!--                            <li><a class="nav-item" href="#blog">{% trans blog %}</a></li>-->
                         <li><a class="nav-item" href="#contacts">{% trans contacts %}</a>
                         </li>
@@ -124,33 +124,70 @@
         <!--            Events block -->
         <section id="events" class="description-block">
             <div class="container">
-                <header class="events-header block-header is-hidden-visibility">{% trans "We support" %}</header>
-                <div id="tedxchisinau" class="is-hidden-visibility">
-                    <a href="http://www.tedxchisinau.com"><img src='{% static 'images/events/tedxchisinau.png' %}' alt='TEDxChisinau' />
-                    </a>
+                <header class="events-header block-header is-hidden-visibility">{% trans "Developed the curriculum and learning process" %}</header>
+                <div class="row">
+                    <div id="girlsgoit" class="col-xs-12 is-hidden-visibility">
+                        <a href="http://www.girlsgoit.com" target="_blank">
+                            <img src='{% static 'images/events/girls-go-it.png' %}' alt='Girls Go IT' />
+                        </a>
+                    </div>
+
+                    <div class="col-xs-12">
+                        <p class="about-girlsgoit text-center is-hidden-visibility">
+                            {% trans 'August 17 – 30, 2015' %}
+                        </p>
+                        <p class="about-girlsgoit is-hidden-visibility">
+                            {% blocktrans %} GirlsGoIT is aim to boost Moldova’s entrepreneurship and innovation capacity by investing and empowering girls and women to master digital technologies. Girls Go IT will use technology and education to further career opportunities for girls in the digital economy, empowering them with digital skills to gain greater access to employability and entrepreneurship. {% endblocktrans %}
+                        </p>
+                        <p class="about-girlsgoit is-hidden-visibility">
+                            {% blocktrans %} GirlsGoIT will develop a manifesto platform to increase dialogue and strengthen collaborative action by Government institutions, International organizations, Businesses and Civil society to enhance girls and women digital skills, entrepreneurial mind-set and start up potential. The commitment of the collaborative stakeholders will work together to advance Moldova Girls and Women digital education and skills. {% endblocktrans %}
+                        </p>
+                    </div>
                 </div>
-                <p class='about-tedxchisinau is-hidden-visibility'>
-                    {% blocktrans %} On 16th of May, TEDxChisinau is organizing a new event with the suggestive theme TEDxChisinau: Crossroads. {% endblocktrans %}
-                </p>
-                <p class="about-tedxchisinau is-hidden-visibility">
-                    {% blocktrans %} Things change rapidly nowadays, with a lot of options to choose from in all areas. Thus, quite frequently we find ourselves pondering on what option to choose and what path to follow in order to get the best possible result. This is true on the personal level as well as on the society level, where as a nation people have to make decisions that will bring them peace and prosperity. {% endblocktrans %}
-                </p>
-                <p class="about-tedxchisinau is-hidden-visibility">
-                    {% blocktrans %} At TEDxChisinau: Crossroads you’ll find different views of local and international speakers on what choices are to be made in order to solve the world’s current problems or at least deal with them more efficiently. How to take better decisions when faced with a choice? What to do when being on a crossroad? {% endblocktrans %}
-                </p>
-                <p class="about-tedxchisinau is-hidden-visibility">
-                    {% blocktrans %} Stay tuned. Let’s cross on the 16th of May! {% endblocktrans %}
-                </p>
 
-                <header class="events-header small-block-header is-hidden-visibility">{% trans "We were here" %}</header>
-                <div id="bizpower" class="is-hidden-visibility">
-                    <img src='{% static 'images/bizpower-400x400.jpg' %}' alt='bizpower' />
+                <header class="events-header block-header margin-top-xlg is-hidden-visibility">{% trans "Past events" %}</header>
+
+                <div class="row">
+
+                    <!-- TEDxChisinau -->
+                    <div class="col-xs-12 col-md-6">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <header class="events-header small-block-header is-hidden-visibility">{% trans "Sponsored" %}</header>
+                            </div>
+                            <div id="tedxchisinau" class="col-xs-12 is-hidden-visibility">
+                                <a href="http://www.tedxchisinau.com" target="_blank">
+                                    <img src='{% static 'images/events/tedxchisinau.png' %}' alt='TEDxChisinau' />
+                                </a>
+                            </div>
+                            <div class="col-xs-12">
+                                <p class="about-tedxchisinau font-sm is-hidden-visibility">
+                                    {% blocktrans %} Things change rapidly nowadays, with a lot of options to choose from in all areas. Thus, quite frequently we find ourselves pondering on what option to choose and what path to follow in order to get the best possible result. This is true on the personal level as well as on the society level, where as a nation people have to make decisions that will bring them peace and prosperity. {% endblocktrans %}
+                                </p>
+                                <p class="about-tedxchisinau font-sm is-hidden-visibility">
+                                    {% blocktrans %} At TEDxChisinau: Crossroads you’ll find different views of local and international speakers on what choices are to be made in order to solve the world’s current problems or at least deal with them more efficiently. How to take better decisions when faced with a choice? What to do when being on a crossroad? {% endblocktrans %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BizPower -->
+                    <div class="col-xs-12 col-md-6">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <header class="events-header small-block-header is-hidden-visibility">{% trans "Delivered two workshops" %}</header>
+                            </div>
+                            <div id="bizpower" class="col-xs-12 is-hidden-visibility">
+                                <img src='{% static 'images/bizpower-400x400.jpg' %}' alt='bizpower' />
+                            </div>
+                            <div class="col-xs-12">
+                                <p class='about-bizpower font-sm is-hidden-visibility'>
+                                    {% blocktrans %} Bizpower—the biggest business event in the Republic of Moldova was held on the May 2–3, 2014. More than 50 speakers talked about actual for local businesses themes, addressed to the 700 delegates. How to gain life-long customers, what does the internationalization of business imply, from coaching to KPI indicators—the aim of Bizpower conference in 2014 was sharing valuable knowledge through discussion of relevant topics. {% endblocktrans %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class='about-bizpower is-hidden-visibility'>
-
-                    {% blocktrans %} Bizpower—the biggest business event in the Republic of Moldova was held on the May 2–3, 2014. More than 50 speakers talked about actual for local businesses themes, addressed to the 700 delegates. How to gain life-long customers, what does the internationalization of business imply, from coaching to KPI indicators—the aim of Bizpower conference in 2014 was sharing valuable knowledge through discussion of relevant topics. {% endblocktrans %}
-
-                </p>
 
                 <!--                    <div class="clear"></div>-->
             </div>
@@ -181,6 +218,7 @@
 
             </div>
         </section>
+
         <section id="partners" class="description-block">
             <div class="container">
                 <header class="partners-header block-header is-hidden-visibility">{% trans partners %}</header>
@@ -208,19 +246,27 @@
                <tbody>
                    <tr>
                        <td class="col-xs-4 text-center">
-                           <a href="http://www.consulting.md">
-                               <img src="{% static 'images/partners/magenta_logo.png' %}" alt="Magenta Consulting">
-                           </a>
+                           <div class="row">
+                               <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+                                   <a href="http://www.consulting.md">
+                                       <img src="{% static 'images/partners/magenta_logo.png' %}" alt="Magenta Consulting">
+                                   </a>
+                               </div>
+                           </div>
                        </td>
                        <td class="col-xs-4 text-center">
-                           <a href="http://tekedu.org.md/">
-                               <img src="{% static 'images/partners/tekedu_logo.png' %}" alt="TEKEDU">
-                           </a>
+                           <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+                               <a href="http://tekedu.org.md/">
+                                   <img src="{% static 'images/partners/tekedu_logo.png' %}" alt="TEKEDU">
+                               </a>
+                           </div>
                        </td>
                        <td class="col-xs-4 text-center">
-                           <a href="http://megageneration.com/">
-                               <img src="{% static 'images/partners/mega_logo.png' %}" alt="MEGA Generation">
-                           </a>
+                           <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+                               <a href="http://megageneration.com/">
+                                   <img src="{% static 'images/partners/mega_logo.png' %}" alt="MEGA Generation">
+                               </a>
+                           </div>
                        </td>
                    </tr>
                </tbody>
@@ -230,27 +276,27 @@
 
         <div class="delimiter"></div>
     
-        <section id="clients" class="description-block">
-            <div class="container">
-                <header class="clients-header block-header is-hidden-visibility">{% trans clients %}</header>
-
-                <div class="text-center clients-logos is-hidden-visibility">
-                    {% ifequal LANGUAGE_CODE 'ru' %}
-                        <a href="http://ptpa.ru/" target="_blank">
-                            <img src="{% static 'images/clients/ptpa_ru.jpg' %}" alt="ПТПА"/>
-                        </a>
-                    {% endifequal %}
-                    {% ifnotequal LANGUAGE_CODE 'ru' %}
-                        <a href="http://ptpa-valves.com/" target="_blank">
-                            <img src="{% static 'images/clients/ptpa_en.png' %}" alt="PTPA"/>
-                        </a>
-                    {% endifnotequal %}
-
-                </div>
-            </div>
-        </section>
-
-        <div class="delimiter"></div>
+{#        <section id="clients" class="description-block">#}
+{#            <div class="container">#}
+{#                <header class="clients-header block-header is-hidden-visibility">{% trans clients %}</header>#}
+{##}
+{#                <div class="text-center clients-logos is-hidden-visibility">#}
+{#                    {% ifequal LANGUAGE_CODE 'ru' %}#}
+{#                        <a href="http://ptpa.ru/" target="_blank">#}
+{#                            <img src="{% static 'images/clients/ptpa_ru.jpg' %}" alt="ПТПА"/>#}
+{#                        </a>#}
+{#                    {% endifequal %}#}
+{#                    {% ifnotequal LANGUAGE_CODE 'ru' %}#}
+{#                        <a href="http://ptpa-valves.com/" target="_blank">#}
+{#                            <img src="{% static 'images/clients/ptpa_en.png' %}" alt="PTPA"/>#}
+{#                        </a>#}
+{#                    {% endifnotequal %}#}
+{##}
+{#                </div>#}
+{#            </div>#}
+{#        </section>#}
+{##}
+{#        <div class="delimiter"></div>#}
 
         {% if articles_for_summary %}
 {#        {% if articles_for_summary.count >= 3 %}#}

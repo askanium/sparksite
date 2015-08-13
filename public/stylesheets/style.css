@@ -181,6 +181,10 @@ ul {
     /*width: 100%;*/
 /*}*/
 
+.margin-top-xlg {
+    margin-top: 72px;
+}
+
 #nav {
     font-family: 'NeutraDisplay-Medium', Helvetica, Verdana, sans-serif;
     text-transform: uppercase;
@@ -195,7 +199,7 @@ ul {
     margin: 0 auto;
     list-style: none;
     padding: 0;
-    height: 100;
+    /*height: 100;*/
     /*display: table;*/
 /*    width: 49.9%;*/
 }
@@ -318,6 +322,10 @@ ul {
     line-height: normal;
 }
 
+.font-sm {
+    font-size: 0.85em;
+}
+
 /*.container {*/
     /*margin: 0 auto;*/
 /*}*/
@@ -349,11 +357,11 @@ ul {
 }
 
 .magenta img {
-    height: 75px;
+    height: 70px;
 }
 
 .mega img {
-    height: 140px;
+    height: 120px;
 }
 /*
 .partner a {
@@ -363,7 +371,7 @@ ul {
 */
 
 .tekedu img {
-    height: 175px;
+    height: 150px;
 }
 /*
 .tekedu a {
@@ -373,7 +381,7 @@ ul {
 */
 
 table.partners td img {
-    width: 60%;
+    width: 100%;
 }
 table.partners {
     visibility: hidden;
@@ -410,7 +418,7 @@ table.partners {
 
 .small-block-header {
     font-size: 0.85em;
-    margin-top: 60px;
+    margin-top: 24px;
 }
 
 .events-topic-first, .events-topic-second {
@@ -426,7 +434,7 @@ table.partners {
     text-align: center;
 }
 
-#bizpower, #prism, #tedxchisinau {
+#bizpower, #prism, #tedxchisinau, #girlsgoit {
     text-align: center;
     margin-bottom: 36px;
 }
@@ -439,7 +447,11 @@ table.partners {
     width: 150px;
 }
 
-#tedxchisinau {
+#girlsgoit img {
+    width: 200px;
+}
+
+#tedxchisinau, #girlsgoit {
     margin-bottom: 60px;
 }
 

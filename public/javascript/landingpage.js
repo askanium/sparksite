@@ -22,7 +22,7 @@
         showEvents();
         showSolutions();
         showPartners();
-        showClients();
+        //showClients();
         showContacts();
 
         $('#SparkLogo').fadeIn(1000);
@@ -42,7 +42,7 @@
         $(window).bind("scroll", showEvents);
         $(window).bind("scroll", showSolutions);
         $(window).bind("scroll", showPartners);
-        $(window).bind("scroll", showClients);
+        //$(window).bind("scroll", showClients);
         $(window).bind("scroll", showContacts);
         $(window).resize(resizeSparkLogo);
 
@@ -99,7 +99,7 @@
             events = $('#events').offset().top - headerHght,
             solutions = $('#solutions').offset().top - headerHght,
             partners = $('#partners').offset().top - headerHght,
-            clients = $('#clients').offset().top - headerHght,
+            //clients = $('#clients').offset().top - headerHght,
             contacts = $('#contacts').offset().top - headerHght,
             scrollTop = $(window).scrollTop();
 
@@ -114,12 +114,12 @@
         } else if (scrollTop < partners) {
             $('.nav-item').removeClass('is-active-nav-item');
             $('a[href=#solutions]').addClass('is-active-nav-item');
-        } else if (scrollTop < clients) {
-            $('.nav-item').removeClass('is-active-nav-item');
-            $('a[href=#partners]').addClass('is-active-nav-item');
-        } else if (scrollTop < contacts) {
-            $('.nav-item').removeClass('is-active-nav-item');
-            $('a[href=#clients]').addClass('is-active-nav-item');
+        //} else if (scrollTop < clients) {
+        //    $('.nav-item').removeClass('is-active-nav-item');
+        //    $('a[href=#partners]').addClass('is-active-nav-item');
+        //} else if (scrollTop < contacts) {
+        //    $('.nav-item').removeClass('is-active-nav-item');
+        //    $('a[href=#clients]').addClass('is-active-nav-item');
         } else {
             $('.nav-item').removeClass('is-active-nav-item');
             $('a[href=#contacts]').addClass('is-active-nav-item');
@@ -160,11 +160,13 @@
         var blockHeader = $('.events-header'),
             bizpower = $('#bizpower'),
             tedxchisinau = $('#tedxchisinau'),
-            pElements = $('.about-bizpower, .about-tedxchisinau');
+            girlsgoit = $('#girlsgoit'),
+            pElements = $('.about-bizpower, .about-tedxchisinau, .about-girlsgoit');
 
         setElementAnimation(blockHeader, 'fadeInUp');
         setElementAnimation(bizpower, 'fadeIn');
         setElementAnimation(tedxchisinau, 'fadeIn');
+        setElementAnimation(girlsgoit, 'fadeIn');
 //        setElementAnimation(aboutBizpower, 'fadeInDown');
 
         pElements.each(function ( i ) {
