@@ -120,6 +120,9 @@
         //} else if (scrollTop < contacts) {
         //    $('.nav-item').removeClass('is-active-nav-item');
         //    $('a[href=#clients]').addClass('is-active-nav-item');
+        } else if (scrollTop < contacts) {
+            $('.nav-item').removeClass('is-active-nav-item');
+            $('a[href=#partners]').addClass('is-active-nav-item');
         } else {
             $('.nav-item').removeClass('is-active-nav-item');
             $('a[href=#contacts]').addClass('is-active-nav-item');
